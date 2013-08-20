@@ -1,22 +1,39 @@
 ---
 abstract: 'Translate Japanese MotorcycleGang Language'
 author:
-  - 'yuichi tsunoda <yuichi.tsunoda@gmail.com>'
+  - 'yuichi tsunoda  C<< <yuichi.tsunoda@gmail.com> >>'
 build_requires: {}
 configure_requires:
-  Module::Build: 0.40
-dynamic_config: 1
-generated_by: 'Module::Build version 0.4004, CPAN::Meta::Converter version 2.120921'
-license: unknown
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.6.3, CPAN::Meta::Converter version 2.132140'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Acme-MotorcycleGang
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
 provides:
   Acme::MotorcycleGang:
     file: lib/Acme/MotorcycleGang.pm
-    version: v0.0.2
+    version: v0.0.4
 requires:
   Test::More: 0
   version: 0
-version: v0.0.2
+resources:
+  bugtracker: https://github.com/aceproject/Acme-MotorcycleGang/issues
+  homepage: https://github.com/aceproject/Acme-MotorcycleGang
+  repository: git://github.com/aceproject/Acme-MotorcycleGang.git
+version: 0.0.4
+x_contributors:
+  - 'yuichi.tsunoda <yuichi.tsunoda@gmail.com>'

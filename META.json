@@ -1,22 +1,41 @@
 {
    "abstract" : "Translate Japanese MotorcycleGang Language",
    "author" : [
-      "yuichi tsunoda <yuichi.tsunoda@gmail.com>"
+      "yuichi tsunoda  C<< <yuichi.tsunoda@gmail.com> >>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4004, CPAN::Meta::Converter version 2.120921",
-   "license" : [
-      "unknown"
-   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v0.6.3",
+   "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
    "name" : "Acme-MotorcycleGang",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author"
+      ]
+   },
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40"
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
+            "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
          }
       },
       "runtime" : {
@@ -29,9 +48,22 @@
    "provides" : {
       "Acme::MotorcycleGang" : {
          "file" : "lib/Acme/MotorcycleGang.pm",
-         "version" : "v0.0.2"
+         "version" : "v0.0.4"
       }
    },
    "release_status" : "stable",
-   "version" : "v0.0.2"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/aceproject/Acme-MotorcycleGang/issues"
+      },
+      "homepage" : "https://github.com/aceproject/Acme-MotorcycleGang",
+      "repository" : {
+         "url" : "git://github.com/aceproject/Acme-MotorcycleGang.git",
+         "web" : "https://github.com/aceproject/Acme-MotorcycleGang"
+      }
+   },
+   "version" : "0.0.4",
+   "x_contributors" : [
+      "yuichi.tsunoda <yuichi.tsunoda@gmail.com>"
+   ]
 }
